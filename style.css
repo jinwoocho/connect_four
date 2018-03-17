@@ -1,0 +1,190 @@
+
+@font-face {
+    font-family: pokemonSolid;
+    src: url(pokemonSolid.ttf);
+}
+body{
+    font-family: pokemonSolid;
+    background-image: url("images/background.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.gameDiv{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.leftSideBar {
+    margin-right: 10%;
+    display: inline-block;
+    width: 20vw;
+    height: 70vh;
+    position: absolute;
+    top: 25%;
+}
+#gameArea {
+    height: 50vw;
+    width: 38vw;
+    border-radius: 1vh;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 20%;
+    top: 3%;
+    display: inline-block;
+}
+#header{
+    height: 20vh;
+    width: 97vw;
+    position: relative;
+    text-align: center;
+    font-size: 5em;
+    line-height: 10vh;
+    color: yellow;
+    padding-top: 2%;
+    text-shadow: 1px 5px dodgerblue, 1px 5px dodgerblue, 1px 5px dodgerblue, 1px -5px dodgerblue;
+    letter-spacing: 5px;
+}
+.rightSideBar{
+    display: inline-block;
+    width: 25vw;
+    height: 70vh;
+    border: solid 2px black;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+}
+.innerDiv {
+    width: 15%;
+    box-sizing: border-box;
+    box-shadow: 3px 3px #320000;
+    border: 1px solid black;
+    height: 100%;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    background-color: mintcream;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.col0 , .col1 , .col2 , .col3 , .col4 , .col5 , .col6{
+    height:14%
+}
+.playerSelect{
+    list-style-type: none;
+    width: 100%;
+    font-size: 7em;
+    text-align: center;
+    height: 30%;
+    margin-bottom: 2vh;
+    padding-bottom: 4vh;
+}
+.p1{
+
+}
+.active1{
+    border: orangered 3px dashed;
+}
+
+.active2{
+    border: blue 3px dashed;
+}
+
+.active3{
+    border: green 3px dashed;
+}
+
+img{
+    position: absolute;
+    right: 6vw;
+    display: inline;
+}
+#leftBar{
+    margin: 0;
+    padding: 0;
+    height: 75%;
+}
+.player1 {
+    background-color: orangered;
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+}
+.player2 {
+    background-color: blue;
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+}
+
+.player3 {
+    background-color: green;
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+}
+#reset{
+    position: relative;
+    top: 9vh;
+    left: 5vw;
+    background-color: yellow;
+    width: 50%;
+}
+
+button:focus {
+    outline:0;
+}
+
+@keyframes bounceInRight {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    from {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        transform: none;
+    }
+}
+h5{
+    font-size: 5em;
+    text-align: center;
+}
+.pikapika{
+    position: relative;
+    left: 5vw;
+    height: 30%;
+    width: 30%;
+}
+#char {
+    position: relative;
+    left: 10vw;
+    height: 30%;
+    width: 30%;
+}
+#squirtle {
+    position: relative;
+    left: 10vw;
+    height: 30%;
+    width: 30%;
+}
+#bulb {
+    position: relative;
+    left: 10vw;
+    height: 30%;
+    width: 30%;
+}
+/*jinwoo*/
+.freeze {
+    background-color: black;
+}
